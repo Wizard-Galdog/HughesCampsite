@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5D05397-36AC-4370-B5A3-A3E32E2AAB1D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HughesCampsite</RootNamespace>
+    <AssemblyName>HughesCampsite</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCabin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCabin.Designer.cs">
+      <DependentUpon>AddCabin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPayment.Designer.cs">
+      <DependentUpon>AddPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStaff.Designer.cs">
+      <DependentUpon>AddStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cabinPrices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cabinPrices.Designer.cs">
+      <DependentUpon>cabinPrices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CollectionClass.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="ErrorCodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorCodes.Designer.cs">
+      <DependentUpon>ErrorCodes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="halloween_DONT_TAKE_BACK_NOR_MAKE_CHANGESDataSet.cs">
+      <DependentUpon>halloween_DONT_TAKE_BACK_NOR_MAKE_CHANGESDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="halloween_DONT_TAKE_BACK_NOR_MAKE_CHANGESDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>halloween_DONT_TAKE_BACK_NOR_MAKE_CHANGESDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice.Designer.cs">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LockScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LockScreen.Designer.cs">
+      <DependentUpon>LockScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginIn.Designer.cs">
+      <DependentUpon>LoginIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HughesDatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HughesDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LookUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LookUp.Designer.cs">
+      <DependentUpon>LookUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakeABooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakeABooking.Designer.cs">
+      <DependentUpon>MakeABooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OverView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OverView.Designer.cs">
+      <DependentUpon>OverView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCabin.resx">
+      <DependentUpon>AddCabin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPayment.resx">
+      <DependentUpon>AddPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStaff.resx">
+      <DependentUpon>AddStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cabinPrices.resx">
+      <DependentUpon>cabinPrices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorCodes.resx">
+      <DependentUpon>ErrorCodes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice.resx">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LockScreen.resx">
+      <DependentUpon>LockScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginIn.resx">
+      <DependentUpon>LoginIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LookUp.resx">
+      <DependentUpon>LookUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakeABooking.resx">
+      <DependentUpon>MakeABooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverView.resx">
+      <DependentUpon>OverView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="halloween_DONT_TAKE_BACK_NOR_MAKE_CHANGESDataSet.xsc">
+      <DependentUpon>halloween_DONT_TAKE_BACK_NOR_MAKE_CHANGESDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="halloween_DONT_TAKE_BACK_NOR_MAKE_CHANGESDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>halloween_DONT_TAKE_BACK_NOR_MAKE_CHANGESDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="halloween_DONT_TAKE_BACK_NOR_MAKE_CHANGESDataSet.xss">
+      <DependentUpon>halloween_DONT_TAKE_BACK_NOR_MAKE_CHANGESDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HughesDatabaseDataSet.xsc">
+      <DependentUpon>HughesDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HughesDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HughesDatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HughesDatabaseDataSet.xss">
+      <DependentUpon>HughesDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\space LockScreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_20cWiV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hughesLogo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Campsite 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Campsite 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Campsite 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sils logo 1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sils logo 2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sils logo 3.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hughes logo 1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hughes logo 2.JPG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
